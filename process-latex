@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+
+texname=$1
+pdfname=${texname/.tex/.pdf}
+
+pdflatex $texname
+evince $pdfname
